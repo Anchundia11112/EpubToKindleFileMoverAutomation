@@ -1,3 +1,5 @@
+. "$psscriptRoot\PowershellLib.ps1"
+
 function kindleDownloadsToTemp() {
 
     $ebookDirectory = "C:\temp\downloadedEbooks"
