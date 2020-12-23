@@ -11,8 +11,6 @@ $downloadsFolder = "C:\Users\micha\Downloads"
 
 $attachments = Get-ChildItem -path $downloadsFolder | Where-Object {$_.Extension -eq ".epub" -or $_.Extension -eq ".pdf"}
 
-Write-Host " HElo"
-
 foreach($book in $attachments) {
     Write-Host "Building content to send book through email"
     
