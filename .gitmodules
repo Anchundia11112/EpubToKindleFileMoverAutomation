@@ -1,0 +1,3 @@
+[submodule "PeronsalPowershellLibrary"]
+	path = PeronsalPowershellLibrary
+	url = https://github.com/Anchundia11112/PersonalPowershellLibrary.git
