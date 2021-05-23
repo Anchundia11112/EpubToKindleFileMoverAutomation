@@ -10,8 +10,8 @@
 Function epubToMobiConverter() {
 
     $userName = [Environment]::UserName
-    $downloadDirectory = "C:\Users\$userName\Downloads"
-    $convertedTempDirectoy = "C:\temp\"
+    $downloadDirectory = "<downLoadsDirectory>"
+    $convertedTempDirectoy = "<tempDirectoryOfConvertedBook>"
 
     $downloadedEbooks = Get-ChildItem -Path $downloadDirectory -Filter "*.epub"
 
@@ -29,7 +29,7 @@ Function epubToMobiConverter() {
 
         Write-Host "------------------------------------"
         
-        & "C:\Program Files (x86)\Calibre2\ebook-convert.exe" @("$ebookDirectoryWithTitle", "$ebookWithMobiExtension")
+        & "ebook-convert.exe filePath" @("$ebookDirectoryWithTitle", "$ebookWithMobiExtension")
         Write-Host -ForegroundColor Green "Conversion complete for $ebookName"
 
         Write-Host "------------------------------------"
